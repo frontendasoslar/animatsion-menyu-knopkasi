@@ -34,7 +34,7 @@ body {
 .span::after {
   content: '';
   display: block;
-  transition: 0.2s;
+  transition: 1s;
 }
 
 .span::before {
@@ -45,8 +45,8 @@ body {
   transform: translateY(5px);
 }
 
-
-.span-btn{
+/* Iks ikonca ucun klaslar */
+/* .span-btn{
   height: 0;
 }
 
@@ -56,4 +56,18 @@ body {
 
 .span-btn::after {
   transform: rotate(-45deg);
+} */
+
+
+/* Strelka ikonkasi uchun klaslar */
+.span-btn::before {
+  transform: rotate(35deg);
+  width: 10px;
+  transform-origin: left top;
+}
+
+.span-btn::after {
+  transform: rotate(-35deg);
+  width: 10px;
+  transform-origin: left bottom;
 }
