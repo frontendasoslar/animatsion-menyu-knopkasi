@@ -79,13 +79,13 @@ body {
 
 /* Strelka ikonkasi uchun klaslar */
 .span-btn::before {
-  transform: rotate(35deg);
+  transform: rotate(-35deg);
   width: 10px;
   transform-origin: left top;
 }
 
 .span-btn::after {
-  transform: rotate(-35deg);
+  transform: rotate(35deg);
   width: 10px;
   transform-origin: left bottom;
 }
