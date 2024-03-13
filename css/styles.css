@@ -3,33 +3,49 @@ body {
   margin: 0;
 }
 
+
+/* O'rab turuvchi element klaslari berilayapdi */
 .section {
+  /* O'rab turuvchi element eni */
   height: 100vh;
+  /* O'rab turuvchi elemeny orqa foni */
   background-color: #7b1fa2;
+  /* O'rab turuvchi element ichidagi elementlarni o'rtaga keltirish stillari */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Link stillari */
 .menu-btn {
+  /* Link elementi block tipdagi element bo'lganligi uchun display: block; berilayapdi */
   display: block;
+  /* Linkning o'lchamlari */
   width: 50px;
   height: 50px;
+  /* Linkning orqa foni */
   background-color: #fff;
+  /* Linkni dumaloq qilish uchun */
   border-radius: 50%;
   position: relative;
 }
 
+/* Span, undan keyin va oldin stillar */
 .span,
 .span::before,
 .span::after {
+ /* Span elementi otasiga nisbatan joylashishi uchun position: absolute; berilayapdi */
  position: absolute;
+ /* Span elementi tepadan 50% joy tashlab joylashayapdi va tepadagi element bilan orasi -1px erilayapdi */
  top: 50%; margin-top: -1px;
+ /* Span elementining o'lchamlari */
  width: 20px;
  height: 1px;
+ /* Span elementining orqa foni */
  background-color: #222;
 }
 
+/* Span elementi holatini o'zgartirishi uchun ketadigan vat uchun kiritilayapdi */
 .span::before,
 .span::after {
   content: '';
@@ -37,10 +53,12 @@ body {
   transition: 1s;
 }
 
+/* Span elementi pastga 5px tushayapdi */
 .span::before {
   transform: translateY(-5px);
 }
 
+/* Span elementi tepaga 5px chiqayapdi */
 .span::after {
   transform: translateY(5px);
 }
